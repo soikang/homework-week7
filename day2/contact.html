@@ -62,70 +62,85 @@
                 <span id="clock"></span>
             </section>
             <main>
-                <h1>Contacting Us</h1>
-                <p>
-                You can drop by the visitors information center at the cliff site that you plan on visiting. They are open
-                7 days a week from 8.00AM to 5.00PM. You can also contact us directly if you need additional information about 
-                the Cliffs, Hours of Operations, Facilities or questions about this site using one of the following:
-                </p>
-                    
-                <div class="contactinfo">
-                    <div class="phone">
-                        <span>Phone:</span>
-                        <span>(800)GCLIFFS</span>
-                    </div>
-                    <div class="email">
-                        <span>Email:</span>
-                        <span>info@greatcliffs.com</span>
+                <div class="content-container">
+                    <h1>Contacting Us</h1>
+                    <p>
+                    You can drop by the visitors information center at the cliff site that you plan on visiting. They are open
+                    7 days a week from 8.00AM to 5.00PM. You can also contact us directly if you need additional information about 
+                    the Cliffs, Hours of Operations, Facilities or questions about this site using one of the following:
+                    </p>
+                        
+                    <div class="contactinfo">
+                        <div class="phone">
+                            <span>Phone:</span>
+                            <span>(800)GCLIFFS</span>
+                        </div>
+                        <div class="email">
+                            <span>Email:</span>
+                            <span>info@greatcliffs.com</span>
+                        </div>
                     </div>
                 </div>
-                
-                <form action="/contact" method="post">  
-                <fieldset>  
-                    <legend>Contact Form</legend>
-                    <div class="textbox">
-                        <label>Name:</label> 
-                        <input type="text" name="name" placeholder="John Doe">  
-                        <label>Email:</label>  
-                        <input type="email" name="email" placeholder="johndoe@gmail.com"> 
-                        <label>Phone:</label>
-                        <input type="text" name="phone" placeholder="xxx-xxx-xxxx"> 
-                    </div>
-                    
-                    <div class="radios">
-                        <label>How should we contact you?</label>  
-                        <input type="radio" name="contact" value="email" checked>Email 
-                        <input type="radio" name="contact" value="phone">Phone
-                    </div>
-                
-                    <div class="selectmenu">
-                        <label>Which Cliff are you inquiring?</label>  
-                        <select>
-                            <option>West Cliff</option>
-                            <option>North Cliff</option>
-                            <option>East Cliff</option>
-                            <option>South Cliff</option>
-                        </select>
-                    </div>
-                    
-                    <div class="commentbox">
-                        <label>How did you hear about us:</label>  
-                        <textarea></textarea>
-                    </div>
-                    <!-- Random Codes -->
-                    <div class="randomcode">
-                        <input type="text" name="randomcode" placeholder="Enter characters" id="codeentered">
-                        <p id="codes"></p>
-                    </div>
+                <!-- CONTACT FORM   -->
+                <div class="container">
+                    <form action="/contact" method="post">  
+                    <fieldset>  
+                        <legend>Contact Form</legend>
+                        <div class="form-group m-3">
+                            <label for="name">Name:</label> 
+                            <input type="text" class="form-control" id="name" placeholder="John Doe">  
+                        </div>
+                        <div class="form-group m-3">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="johndoe@gmail.com">
+                        </div>
+                        <div class="form-group m-3">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="xxx-xxx-xxxx">
+                        </div>
 
-                    <div class="button">
-                        <button class="btn btn-primary" id="submit" type="submit" value="inquire">
-                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                            <span>Inquire</span>
-                        </button>
-                    </div> 
-                </fieldset>  
-                </form>
+                        <div class="form-check ">
+                            <label>How should we contact you?</label>
+                            <div class="form-check m-3">
+                                <input type="radio" class="form-check-input" id="contactEmail" name="contact" value="email" checked>
+                                <label class="form-check-label" for="contactEmail">Email</label>
+                            </div>
+                            <div class="form-check m-3">
+                                <input type="radio" class="form-check-input" id="contactPhone" name="contact" value="phone">
+                                <label class="form-check-label" for="contactPhone">Phone</label>
+                            </div>
+                        </div>
+                    
+                        <div class="form-group m-3">
+                            <label for="cliff">Which Cliff are you inquiring?</label>
+                            <select class="form-control" id="cliff">
+                                <option>West Cliff</option>
+                                <option>North Cliff</option>
+                                <option>East Cliff</option>
+                                <option>South Cliff</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group m-3">
+                            <label for="hearAboutUs">How did you hear about us:</label>
+                            <textarea class="form-control mr-3" id="hearAboutUs" name="hearAboutUs" rows="5"></textarea>
+                        </div>
+                        
+                        <div class="form-group m-3 text-right">
+                            <!-- Random Codes -->
+                            <div class="randomcode">
+                                <input type="text" name="randomcode" placeholder="Enter characters" id="codeentered">
+                                <p id="codes"></p>
+                            </div>
+                            <!-- Inquire button -->
+                            <button class="btn btn-primary" id="submit" type="submit" value="inquire">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                <span>Inquire</span>
+                            </button>
+                        </div> 
+                    </fieldset>  
+                    </form>
+                </div>
             </main>
             <section>
                 <div class="container" id="partners">

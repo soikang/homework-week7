@@ -341,6 +341,12 @@ span:first-child :not(#timeofday){
     text-transform: uppercase;
     font-weight: bold;
 }
+.content-container {
+    width: 85%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding for spacing */
+    box-sizing: border-box; /* Include padding in the width */
+}
 .contactinfo .email{
     padding-top: 10px;
 }
@@ -353,7 +359,8 @@ form fieldset{
 form legend {
     color: #4977d1;
     text-transform: uppercase;
-    font-weight: bold;;
+    font-weight: bold;
+    width: auto;
 }
 label {
     font-weight: bold;
@@ -395,11 +402,11 @@ input[type="radio"]{
     padding-top: 10px;
     padding-left: 20px;
 }
-textarea {
+/* textarea {
     width: 500px;
     height: 200px;
     margin-left: 20px;
-}
+} */
 /* inqurie button */
 form .button{
     margin: 10px 0 10px 0;
@@ -430,8 +437,7 @@ form .randomcode {
     margin-top: 10px;
     margin-bottom: 10px;
     padding-left: 20px;
-    max-width: 500px;
-   
+    /* max-width: 500px; */
     display: flex;
     flex-direction: row;
     align-items: center;
