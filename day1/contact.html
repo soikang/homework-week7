@@ -1,31 +1,61 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>contact</title>
-        <meta charset="utf-8">   
-         <!-- Font Awesome -->
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-         <!-- day2 external style sheet -->
-         <link rel="stylesheet" type="text/css" href="styles.css">
+      <title>contact</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        >
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles.css" />
+        <!-- other scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+        
+        </style>     
     </head>
     <body id="contact" onLoad="disableButton(true)">
         <!-- Container to wrap everything -->
         <div id="container">
             <header>
-                <!-- <img src="images/cliff_ocean.jpg" alt="Ocean View Cliff" width="1280" height="564"> -->
-                <div class="main-header">
-                    <div class="logo">
-                        <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
-                    </div>
-                    <nav class="main-menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="cliffs.html">Cliffs</a></li>
-                            <li><a href="activities.html">Activities</a></li>
-                            <li class="active"><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
+                <nav class="navbar navbar-expand-lg navbar-dark  bg-light main-header bg-dark fixed-top">
+                  <a class="navbar-brand logo" href="#">
+                      <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="main-menu no-margin-nav collapse navbar-collapse" id="navbarNav">
+                      <!-- <ul class="navbar-nav">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="cliffs.html">Cliffs</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="activities.html">Activities</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="contact.html">Contact</a>
+                          </li>
+                      </ul> -->
+                      <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cliffs.html">Cliffs</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li class="active"><a href="contact.html">Contact</a></li>
+                      </ul>
+                  </div>
+                </nav>
+              </header>
             <!-- adding time of day code -->       
             <section id="timeofday">
                 <span>Your Current Local Time : </span>
@@ -89,32 +119,50 @@
                     </div>
 
                     <div class="button">
-                        <input type="submit" value="Inquire" id="submit">
+                        <button class="btn btn-primary" id="submit" type="submit" value="inquire">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            <span>Inquire</span>
+                        </button>
                     </div> 
                 </fieldset>  
                 </form>
             </main>
             <section>
-                <ul id="partners">
-                    <!-- <li class="partner">
-                        <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours">
-                    </li>
-                    <li class="partner">
-                        <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental">
-                    </li>
-                    <li class="partner">
-                        <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure">
-                    </li>
-                    <li class="partner">
-                        <img src="images/partners/partner-collegetours.png" alt="Partner College Tours">
-                    </li>
-                    <li class="partner">
-                        <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals">
-                    </li>
-                    <li class="partner">
-                        <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group">
-                    </li> -->
-                </ul>
+                <div class="container" id="partners">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                            <div class="partner">
+                                <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours" class="partner-img">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                            <div class="partner">
+                                <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental" class="partner-img">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                          <div class="partner">
+                            <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure" class="partner-img">
+                          </div>
+                      </div>
+                      <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                        <div class="partner">
+                          <img src="images/partners/partner-collegetours.png" alt="Partner College Tours" class="partner-img">
+                        </li>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                      <div class="partner">
+                        <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals" class="partner-img">
+                      </div>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="partner">
+                      <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group" class="partner-img">
+                    </div>
+                  </div>
+                  </div>
+                </div>
             </section>
             <footer>
                 <div id="nondisclaimer">
@@ -138,7 +186,7 @@
     <script src="js/digclock.js"></script>
 
     <!-- Partners -->
-    <script src="js/site_scripts.js"></script>
+    <!-- <script src="js/site_scripts.js"></script> -->
 
     <!-- random code -->
     <script src="js/randomcodes.js"></script>

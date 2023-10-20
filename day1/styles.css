@@ -1,19 +1,35 @@
 /* Header */
 header {
     width: 100%;
-    min-height: 400px;
-    padding-top: 3em;
+    min-height: 275px;
+    /* padding-top: 3em; */
 }
 #home header {
     background:  no-repeat lightgrey url(images/cliff_ocean.jpg);
-    background-size: 1500px;
+    background-size: 100% 400px;
+     /*This will make the background image full width of the screen but the instruction says 1500px */
 }
+
+#activities header {
+    background: no-repeat lightgrey url(images/runfly.jpg);
+    background-size: 100% 400px;
+}
+#contact header {
+    background: no-repeat lightgrey url(images/cliff_rock.jpg);
+    background-size: 100% 400px;
+}
+#cliffs header {
+    background: no-repeat lightgrey url(images/forest_cliff.jpg);
+    background-size: 100% 400px;
+}
+
 .main-header {
     background-color:rgb(255, 255, 255, 0.8) ;
     width: 700px;
     margin: 2em auto 0 auto;
     min-height: 100px;
     height: 100px;
+    opacity: 0.9;
 }
 .main-header .logo img {
     width: 100px;
@@ -217,6 +233,11 @@ footer #nondisclaimer .social .fa-instagram {
       min-height: 450px;
       margin-top: 1em;
     }
+    /* #cliffs .main-col-content {
+        padding: 25px;
+        min-height: 450px;
+        margin-top: 1em;
+    } */
     .main-header {
       width: 100%;
     }
@@ -228,7 +249,6 @@ footer #nondisclaimer .social .fa-instagram {
 }
 
 /* FROM WEEK5 HW BELOW */
-
 /* Activities - activities.html */
 table {
     width: 1000px;
@@ -240,7 +260,8 @@ caption {
     color: #fff;
     font-size: 1.3em;
     font-weight: bold;
-    padding-top: 1em;
+    caption-side: top;
+    text-align: center;
 }
 thead {
     background: #BDE1FF;
@@ -429,27 +450,18 @@ form .randomcode p {
     color: black;
 }
 
-
-/* Below is what I need to use for the contact form styling : 
-Properties
-• margin, padding
-• color, font-size, font-weight, text-align, texttransform
-• width, height, border, display, resize
-• background-color
-Selectors
-• Contextual (ex: form .button)
-• Pseudo-class (ex: span: first-child
-Colors: #9ed034, #4977D1, #fff 
-*/
-
 /* Cliffs - cliffs.html */
+
 .cliff-container {
-    display: grid;
+    display: block;
     grid-gap: 2em;
     grid-template-columns: repeat(2, 400px);
     grid-template-rows: repeat(2, 250px);
     justify-content: center;
     height: 80%;
+}
+.cliff {
+    padding-bottom: 20px;
 }
 .cliff img {
     width: 100%;
@@ -470,6 +482,8 @@ figure {
     margin: 0;
 }
 
+
+
 /* clock */
 #timeofday{
     font-family: Arial, Helvetica, sans-serif;
@@ -484,64 +498,3 @@ figure {
     color: #125688;
 }
 
-/* ACTIVATE BELOW WHEN TESTING NAVIGATION AND OTHERS FOR RWD */
-/* Media Queries */
-@media (max-width: 768px) {
-    footer #nondisclaimer .copy {
-        padding: 3.5em 0em 3.5em 0em;
-        text-align: center;
-        float: none;
-        font-size: 0.9em;
-      }
-      footer #nondisclaimer .social {
-        padding: 2.5em 0;
-        margin: 0;
-        text-align: center;
-        float: none;
-      }
-}
-
-@media (max-width: 992px) {
-    .logo img {
-        position: relative;
-        bottom: 8px;
-    }
-    .main-menu {
-        width: 200px;
-        background-color:rgb(255, 255, 255);
-        /* position: absolute; */
-        right: 1.7em;
-    }
-    .main-menu ul {
-      margin-top: 0px;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .main-menu ul li {
-      list-style-type: none;
-      float: left;
-      padding-left: 25px;
-      border-left: 1px solid rgba(202, 204, 202, 0.6);
-      line-height: 50px;
-      text-transform: uppercase;
-      font-size: 14px;
-    }
-    main {
-      padding: 3em 1em 3em 1em;
-      margin: 0;
-    }
-    #home .main-col-content {
-      padding: 25px;
-      min-height: 450px;
-      margin-top: 1em;
-    }
-    .main-header {
-      width: 100%;
-    }
-
-    .navbar-brand {
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-}
