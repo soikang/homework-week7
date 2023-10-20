@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>activities</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        >
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles.css" />
+        <!-- other scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+        
+        </style>     
+    </head>
+    <body id="activities">
+    <!-- Container to wrap everything -->
+    <div id="container">
+        <header>
+          <nav class="navbar navbar-expand-lg navbar-dark  bg-light main-header bg-dark fixed-top">
+            <a class="navbar-brand logo" href="#">
+                <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="main-menu no-margin-nav collapse navbar-collapse" id="navbarNav">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="cliffs.html">Cliffs</a></li>
+                  <li class="active"><a href="activities.html">Activities</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+          </nav>
+        </header>
+        <!-- adding time of day code -->       
+        <section id="timeofday">
+            <span>Your Current Local Time : </span>
+            <span id="clock"></span>
+        </section>
+        <main>
+            <h1>Activities</h1>
+            <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. These activities are not however run by the state park and recreational department. They are operated and manage by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please contact them directly. For a list of activities, please refer to the table below:</p>
+            <table style="text-align: center;">
+                <caption>Activities at the Cliffs</caption>
+                <thead>
+                    <tr>
+                    <th>Activity</th>
+                    <th>Westcliff</th>
+                    <th>North Cliff</th>
+                    <th>East Cliff</th>
+                    <th>South Cliff</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="unselectable">Hiking</td>
+                        <td>College Hikes</td>
+                        <td>Family Fun</td>
+                        <td>Treasure Trails</td>
+                        <td>Canyon Explorer</td>
+                    </tr>
+                    <tr>
+                        <td id="unselectable">Kayak</td>
+                        <td>Western Kayak Meetup</td>
+                        <td id="unselectable">Not Available</td>
+                        <td>Youth Kayaking</td>
+                        <td>Kayak Down</td>
+                    </tr>
+                    <tr>
+                        <td id="unselectable">Skydiving</td>
+                        <td>Seacliff Diving</td>
+                        <td>Sky is the limit</td>
+                        <td id="unselectable">Not Available</td>
+                        <td>Sky Diving for Beginners</td>
+                    </tr>
+                    <tr>
+                        <td id="unselectable">Biking</td>
+                        <td>Bicycle for One</td>
+                        <td id="unselectable">Not Available</td>
+                        <td>Bike Meetup Group</td>
+                        <td id="unselectable">Not Available</td>
+                    </tr>
+                    <tr>
+                        <td id="unselectable">Camping</td>
+                        <td>Youth Camp</td>
+                        <td>Rent a Tent</td>
+                        <td>Campground Adventure</td>
+                        <td>Sunset Camping</td>
+                    </tr>
+                </tbody>
+                <tfoot>   
+                </tfoot>
+            </table>
+
+            <div id="displaySelected">
+                <div id="result">
+                    <h4>My selected activites to enqurie:</h4>
+                </div>
+                <div id="sendinfo">
+                    <input type="email" placeholder="johndo@gmail.com">
+                    <button>Get Info</button>
+                </div>
+            </div>
+
+        </main>
+        <section>
+            <div class="container" id="partners">
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                        <div class="partner">
+                            <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours" class="partner-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                        <div class="partner">
+                            <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental" class="partner-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                      <div class="partner">
+                        <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure" class="partner-img">
+                      </div>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="partner">
+                      <img src="images/partners/partner-collegetours.png" alt="Partner College Tours" class="partner-img">
+                    </li>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                  <div class="partner">
+                    <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals" class="partner-img">
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <div class="partner">
+                  <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group" class="partner-img">
+                </div>
+              </div>
+              </div>
+            </div>
+        </section>
+        <footer>
+            <div id="nondisclaimer">
+                <div class="copy">
+                    &copy; Copyright 2020 :: GreatCliffs.com
+                </div>
+                <div class="social">
+                    <a href="#" class="fa fa-facebook"></a> 
+                    <a href="#" class="fa fa-instagram"></a> 
+                    <a href="#" class="fa fa-twitter"></a> 
+                </div>
+            </div>
+            <div id="disclaimer">
+                <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Javascript code -->
+
+    <!-- Digital Clock -->
+    <script src="js/digclock.js"></script>
+
+    <!-- Partners -->
+    <!-- <script src="js/site_scripts.js"></script> -->
+    
+    <!-- cliff.html hightlight code -->
+    <script src="js/activity.js"></script>
+    
+    </body>
+</html>

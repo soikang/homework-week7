@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>cliffs</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        >
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles.css" />
+        <!-- other scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+        
+        </style>     
+    </head>
+    <body id="cliffs">
+    <!-- Container to wrap everything -->
+    <div id="container">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark  bg-light main-header bg-dark fixed-top">
+              <a class="navbar-brand logo" href="#">
+                  <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="main-menu no-margin-nav collapse navbar-collapse" id="navbarNav">
+                  <!-- <ul class="navbar-nav">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="cliffs.html">Cliffs</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="activities.html">Activities</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                  </ul> -->
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="cliffs.html">Cliffs</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+              </div>
+            </nav>
+          </header>
+        <!-- adding time of day code -->       
+        <section id="timeofday">
+            <span>Your Current Local Time : </span>
+            <span id="clock"></span>
+        </section>
+        <main>
+            <div class="main-text">
+                <h1>California's Greatest Cliffs</h1>
+                <p>The greatest cliffs are these four cliffs located in southern California. Each of these cliffs have their own uniqueness and beauty: West Cliff, North Cliff, East Cliff and South Cliff are the pride of California. Each cliff has many amenities to offer visitors such as recreational areas, camping sites, wildlife watch spots and overnight cabins.</p>
+                <p>No matter which direction you head from Irvine, California, the sites are easily reached within a 100 mile radius. West Cliff is the most popular among Westcliff University campus students because of its close proximity.</p>
+            </div>
+            <div class="cliff-container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="cliff west">
+                            <figure class="text-center">
+                                <figcaption>West Cliff</figcaption>
+                                <img src="images/cliff-west-sea.jpg" alt="West Cliff">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="cliff north">
+                            <figure class="text-center">
+                                <figcaption>North Cliff</figcaption>
+                                <img src="images/cliff-north-mountain.jpg" alt="North Cliff">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="cliff east">
+                            <figure class="text-center">
+                                <figcaption>East Cliff</figcaption>
+                                <img src="images/cliff-east-river.jpg" alt="East Cliff">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="cliff south">
+                            <figure class="text-center">
+                                <figcaption>South Cliff</figcaption>
+                                <img src="images/cliff-south-canyon.jpg" alt="South Cliff">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                    <!-- <div class="cliff west">
+                        <figure>
+                            <figcaption>West Cliff</figcaption>
+                            <img src="images/cliff-west-sea.jpg" alt="West Cliff">
+                        </figure>
+                    </div>
+                    <div class="cliff north">
+                        <figure>
+                            <figcaption>North Cliff</figcaption>
+                            <img src="images/cliff-north-mountain.jpg" alt="North Cliff">
+                        </figure>
+                    </div>
+                    <div class="cliff east">
+                        <figure>
+                            <figcaption>East Cliff</figcaption>
+                            <img src="images/cliff-east-river.jpg" alt="East Cliff">
+                        </figure>
+                    </div>
+                    <div class="cliff south">
+                        <figure>
+                            <figcaption>South Cliff</figcaption>
+                            <img src="images/cliff-south-canyon.jpg" alt="South Cliff">
+                        </figure>
+                    </div> -->
+            </div>
+        </main>
+        <section>
+            <div class="container" id="partners">
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                        <div class="partner">
+                            <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours" class="partner-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                        <div class="partner">
+                            <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental" class="partner-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                      <div class="partner">
+                        <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure" class="partner-img">
+                      </div>
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="partner">
+                      <img src="images/partners/partner-collegetours.png" alt="Partner College Tours" class="partner-img">
+                    </li>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                  <div class="partner">
+                    <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals" class="partner-img">
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <div class="partner">
+                  <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group" class="partner-img">
+                </div>
+              </div>
+              </div>
+            </div>
+        </section>
+        <footer>
+            <div id="nondisclaimer">
+                <div class="copy">
+                    &copy; Copyright 2020 :: GreatCliffs.com
+                </div>
+                <div class="social">
+                    <a href="#" class="fa fa-facebook"></a> 
+                    <a href="#" class="fa fa-instagram"></a> 
+                    <a href="#" class="fa fa-twitter"></a> 
+                </div>
+            </div>
+            <div id="disclaimer">
+                <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Javascript code -->
+    
+    <!-- Digital Clock -->
+    <script src="js/digclock.js"></script>
+
+    <!-- Partners -->
+    <!-- <script src="js/site_scripts.js"></script> -->
+
+    </body>
+</html>

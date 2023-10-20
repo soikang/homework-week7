@@ -1,0 +1,500 @@
+/* Header */
+header {
+    width: 100%;
+    min-height: 275px;
+    /* padding-top: 3em; */
+}
+#home header {
+    background:  no-repeat lightgrey url(images/cliff_ocean.jpg);
+    background-size: 100% 400px;
+     /*This will make the background image full width of the screen but the instruction says 1500px */
+}
+
+#activities header {
+    background: no-repeat lightgrey url(images/runfly.jpg);
+    background-size: 100% 400px;
+}
+#contact header {
+    background: no-repeat lightgrey url(images/cliff_rock.jpg);
+    background-size: 100% 400px;
+}
+#cliffs header {
+    background: no-repeat lightgrey url(images/forest_cliff.jpg);
+    background-size: 100% 400px;
+}
+
+.main-header {
+    background-color:rgb(255, 255, 255, 0.8) ;
+    width: 700px;
+    margin: 2em auto 0 auto;
+    min-height: 100px;
+    height: 100px;
+    opacity: 0.9;
+}
+.main-header .logo img {
+    width: 100px;
+    height: 100px;
+    margin: 0 2em 0 0;
+    float: left;
+}
+
+/* Navigation */
+.main-menu {
+    margin-left: 227px;
+    font-weight: 400;
+}
+
+/* added for hw */
+.no-margin-nav {
+  margin-left: 0px;
+}
+
+/* added for hw */
+.main-menu ul {
+  margin-top: revert;
+}
+
+.main-menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    float: left;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-left: 1px solid rgba(202, 204, 202, 0.6);
+    line-height: 100px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.main-menu ul li a {
+    text-decoration: none;
+    color: #888;
+}
+.main-menu ul li a:hover {
+    color: #9ed034;
+}
+.main-menu ul li.active {
+    background: #9ed034;
+    border: none;
+}
+.main-menu ul li.active a {
+    color: #fff;
+}
+
+/* Main */
+main {
+    padding: 3em 6em 3em 5.5em;
+    margin: 2em 0;
+    font-family:Arial, Helvetica, sans-serif;
+} 
+main h1 {
+    font-size: 2.5em;
+    padding-bottom: 0.5em;
+    color: #9ed034;
+}
+main h2 {
+    font-size: 1.7em;
+}
+.center-align {
+  text-align: center;
+}
+
+/* Partners */
+section {
+    width: 100%;
+    background-color: #4288C3;
+}
+section #partners {  
+    /* width: 1200px; */
+    padding: 2em 0 2em 0;
+    margin: 0 auto;
+    text-align: center;
+}
+section #partners .partner {
+    display: inline-block;
+    margin: 0.75em 0.75em;
+    padding: 1.3em 1.5em;
+    background-color: #fff;
+    border-radius: 50%;
+}
+section #partners .partner img {
+    width: 90px;
+    height: 90px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 155px;
+    padding-bottom: 1em;
+    background-color: #ecfab8;
+}
+footer #nondisclaimer .copy {
+    padding: 3.5em 3.5em 3.5em 13em;
+    float: left;
+    font-size: 0.9em;
+}
+footer #nondisclaimer .social {
+    padding: 2.5em;
+    margin-right: 9.25em;
+    float: right;
+}
+footer #disclaimer {
+    clear: both;
+}
+
+footer #disclaimer p {
+    font-size: 0.85em;
+    text-align: center;
+}
+footer #nondisclaimer .social .fa {
+    padding: 15px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 50%;
+}
+footer #nondisclaimer .social .fa:hover {
+    opacity: 0.7;
+}
+footer #nondisclaimer .social .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+    
+footer #nondisclaimer .social .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+footer #nondisclaimer .social .fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+/* added for hw */
+.partner-img {
+  width: 90px; /* Adjust this width to your desired size */
+  height: 90px; /* Adjust this height to your desired size */
+}
+
+/* Home */
+
+/* ACTIVATE BELOW WHEN TESTING NAVIGATION AND OTHERS FOR RWD */
+/* Media Queries */
+@media (max-width: 768px) {
+    footer #nondisclaimer .copy {
+        padding: 3.5em 0em 3.5em 0em;
+        text-align: center;
+        float: none;
+        font-size: 0.9em;
+      }
+      footer #nondisclaimer .social {
+        padding: 2.5em 0;
+        margin: 0;
+        text-align: center;
+        float: none;
+      }
+}
+
+@media (max-width: 992px) {
+    .logo img {
+        position: relative;
+        bottom: 8px;
+    }
+    .main-menu {
+        width: 200px;
+        background-color:rgb(255, 255, 255);
+        /* position: absolute; */
+        right: 1.7em;
+    }
+    .main-menu ul {
+      margin-top: 0px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .main-menu ul li {
+      list-style-type: none;
+      float: left;
+      padding-left: 25px;
+      border-left: 1px solid rgba(202, 204, 202, 0.6);
+      line-height: 50px;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+    main {
+      padding: 3em 1em 3em 1em;
+      margin: 0;
+    }
+    #home .main-col-content {
+      padding: 25px;
+      min-height: 450px;
+      margin-top: 1em;
+    }
+    /* #cliffs .main-col-content {
+        padding: 25px;
+        min-height: 450px;
+        margin-top: 1em;
+    } */
+    .main-header {
+      width: 100%;
+    }
+
+    .navbar-brand {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+}
+
+/* FROM WEEK5 HW BELOW */
+/* Activities - activities.html */
+table {
+    width: 1000px;
+    margin: 4em auto 0 auto;
+}
+caption {
+    background: #852b1b;
+    height: 40px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    caption-side: top;
+    text-align: center;
+}
+thead {
+    background: #BDE1FF;
+}
+tbody {
+    background: #eeffe6;
+    text-align: center;
+}
+th,td {
+    width: 225px;
+    height: 75px;
+    vertical-align: middle;
+    border: solid 1px #852b1b;
+}
+th:first-child {
+    width: 125px;
+    height: 50px;
+    background: #4977d1;
+    color: #fff;
+}
+td:first-child {
+    font-weight: bold;
+    background: #BDE1FF;
+}
+
+#activities main #displaySelected {
+    visibility: hidden;
+    margin:0 auto;
+    width: 600px;
+    border: 2px solid #9ed034;
+    padding: 0.75em;
+}
+
+#activities main #displaySelected #result, #activities main #displaySelected #sendinfo {
+    display: inline-block;
+    margin: 0;
+}
+
+#activities main #reulst {
+    min-height: 50px;
+    width: 300px;
+    padding: 0;
+}
+
+#activities main #result h4 {
+    margin-bottom: 1em;
+    font-size: 1.15em;
+}
+
+#activities main #displaySelected #sendinfo input[type="email"]{
+    width: 200px;
+}
+
+/* Define the CSS class for cell highlighting */
+.highlighted {
+    background-color: rgb(109, 221, 109); /* Customize the highlighting style as needed */
+    color: white; /* Set the text color to white */
+    cursor: pointer; /* Set cursor to pointer for interactivity */
+}
+
+#activities table td:not(#unselectable){
+    cursor: pointer;
+}
+
+/* Contact - contact.html */
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+}
+main h1 {
+    color: #9ed034;   
+}
+main p {
+    padding-bottom: 10px;
+}
+span:first-child :not(#timeofday){
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.contactinfo .email{
+    padding-top: 10px;
+}
+form {
+    padding-top: 20px;
+}
+form fieldset{
+    border: solid 2px #9ed034;
+}
+form legend {
+    color: #4977d1;
+    text-transform: uppercase;
+    font-weight: bold;;
+}
+label {
+    font-weight: bold;
+}
+/* text box */
+.textbox {
+    padding-left: 20px;
+}
+.textbox label {
+    display: block;
+    padding-top: 10px;
+}
+input {
+    width: 500px;
+}
+/* radio buttons */
+.radios {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+input[type="radio"]{
+    width: 20px;
+}
+/* text box */
+.selectmenu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.selectmenu select {
+    width: 200px;
+    height: 20px;
+    text-align: center;;
+}
+/* text box */
+.commentbox label {
+    display: block;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+textarea {
+    width: 500px;
+    height: 200px;
+    margin-left: 20px;
+}
+/* inqurie button */
+form .button{
+    margin: 10px 0 10px 0;
+    width: 520px;
+    display: flex;
+    justify-content: end;
+}
+form .button input[type=submit]{
+    /* border: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+    width: 100px;
+    height: 35px; */
+
+    width: 8em;
+    height: 2.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+    /* background-color: #4977D1; */
+    color: #ffffff;
+    border: none;
+}
+
+/* randome code input */
+form .randomcode { 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    max-width: 500px;
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+form .randomcode input {
+    width: 200px;
+    height: fit-content;
+}
+
+form .randomcode p {
+    padding: 15 10 15 10;
+    margin: 0 0 0 20px;
+    background-color:rgba(202, 204, 202, 0.6);
+    color: black;
+}
+
+/* Cliffs - cliffs.html */
+
+.cliff-container {
+    display: block;
+    grid-gap: 2em;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(2, 250px);
+    justify-content: center;
+    height: 80%;
+}
+.cliff {
+    padding-bottom: 20px;
+}
+.cliff img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+.cliff figcaption {
+    background-color: #921600;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+
+
+/* clock */
+#timeofday{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3a3a3a;
+    background-image: linear-gradient(rgba(251,215,139,1) 0%, rgba(118,213,245,1) 100%);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#clock {
+    color: #125688;
+}
+
