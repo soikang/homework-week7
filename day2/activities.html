@@ -105,8 +105,41 @@
                     </table>
                 </div>
             </div>
+            
+            <!-- bootstrap modal -->
+            <div id="modal-button" class="d-flex justify-content-center align-items-center">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#displaySelected">Select</button>
+            </div>
+            <div class="modal fade" id="displaySelected">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">My selected activites to enqurie:</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div id="result">
+                                <!-- Content of the selected activity can be displayed here -->
+                            </div>
+                        </div>
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <form class="was-validated">
+                                <div id="sendinfo" class="d-flex justify-content-between align-items-center">
+                                    <input type="email" class="form-control mr-2" placeholder="johndoe@gmail.com" required>
+                                    <button class="btn btn-secondary mr-2" data-dismiss="modal" type="submit">Back to Activities</button>
+                                    <button class="btn btn-secondary" data-dismiss="modal" type="submit">Get Info</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <div id="displaySelected">
+
+            <!-- <div id="displaySelected">
                 <div id="result">
                     <h4>My selected activites to enqurie:</h4>
                 </div>
@@ -114,7 +147,7 @@
                     <input type="email" placeholder="johndo@gmail.com">
                     <button>Get Info</button>
                 </div>
-            </div>
+            </div> -->
 
         </main>
         <section>
@@ -182,5 +215,6 @@
     <!-- cliff.html hightlight code -->
     <script src="js/activity.js"></script>
     
+    </script>
     </body>
 </html>
