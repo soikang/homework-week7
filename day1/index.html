@@ -18,259 +18,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     >
     <!-- Custom CSS -->
-    <!-- <link rel="stylesheet" href="styles.css" /> -->
-<style>
-    /* Header */
-header {
-    width: 100%;
-    min-height: 400px;
-    padding-top: 3em;
-}
-#home header {
-    background:  no-repeat lightgrey url(images/cliff_ocean.jpg);
-    background-size: 1500px;
-}
-.main-header {
-    background-color:rgb(255, 255, 255, 0.8) ;
-    width: 700px;
-    margin: 2em auto 0 auto;
-    min-height: 100px;
-    height: 100px;
-}
-.main-header .logo img {
-    width: 100px;
-    height: 100px;
-    margin: 0 2em 0 0;
-    float: left;
-}
-
-/* Navigation */
-.main-menu {
-    margin-left: 227px;
-    font-weight: 400;
-}
-
-/* added for hw */
-.no-margin-nav {
-  margin-left: 0px;
-}
-
-/* added for hw */
-.main-menu ul {
-  margin-top: revert;
-}
-
-.main-menu ul li {
-    list-style-type: none;
-    display: inline-block;
-    float: left;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-left: 1px solid rgba(202, 204, 202, 0.6);
-    line-height: 100px;
-    text-transform: uppercase;
-    font-size: 14px;
-}
-.main-menu ul li a {
-    text-decoration: none;
-    color: #888;
-}
-.main-menu ul li a:hover {
-    color: #9ed034;
-}
-.main-menu ul li.active {
-    background: #9ed034;
-    border: none;
-}
-.main-menu ul li.active a {
-    color: #fff;
-}
-
-/* Main */
-main {
-    padding: 3em 6em 3em 5.5em;
-    margin: 2em 0;
-    font-family:Arial, Helvetica, sans-serif;
-}
-main h1 {
-    font-size: 2.5em;
-    padding-bottom: 0.5em;
-    color: #9ed034;
-}
-main h2 {
-    font-size: 1.7em;
-}
-
-/* added for hw*/
-.center-align {
-  text-align: center;
-}
-
-/* Partners */
-section {
-    width: 100%;
-    background-color: #4288C3;
-}
-section #partners {  
-    /* width: 1200px; */
-    padding: 2em 0 2em 0;
-    margin: 0 auto;
-    text-align: center;
-}
-section #partners .partner {
-    display: inline-block;
-    margin: 0.75rem 0.75em;
-    padding: 1.3em 1.5em;
-    background-color: #fff;
-    border-radius: 50%;
-}
-section #partners .partner img {
-    width: 90px;
-    height: 90px;
-}
-
-/* Footer */
-footer {
-    width: 100%;
-    height: 155px;
-    padding-bottom: 1em;
-    background-color: #ecfab8;
-}
-footer #nondisclaimer .copy {
-    padding: 3.5em 3.5em 3.5em 13em;
-    float: left;
-    font-size: 0.9em;
-}
-footer #nondisclaimer .social {
-    padding: 2.5em;
-    margin-right: 9.25em;
-    float: right;
-}
-footer #disclaimer {
-    clear: both;
-}
-
-footer #disclaimer p {
-    font-size: 0.85em;
-    text-align: center;
-}
-footer #nondisclaimer .social .fa {
-    padding: 15px;
-    font-size: 15px;
-    /* width: 15px; */
-    text-align: center;
-    text-decoration: none;
-    margin: 0 4px;
-    border-radius: 50%;
-}
-footer #nondisclaimer .social .fa:hover {
-    opacity: 0.7;
-}
-footer #nondisclaimer .social .fa-facebook {
-    background: #3B5998;
-    color: white;
-}
+    <link rel="stylesheet" href="styles.css" />
+    <style>
     
-footer #nondisclaimer .social .fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-footer #nondisclaimer .social .fa-instagram {
-    background: #125688;
-    color: white;
-}
-
-/* added for hw */
-.partner-img {
-  width: 90px; /* Adjust this width to your desired size */
-  height: 90px; /* Adjust this height to your desired size */
-}
-
-
-
-
-/* Home */
-
-/* ACTIVATE BELOW WHEN TESTING NAVIGATION AND OTHERS FOR RWD */
-/* Media Queries */
-@media (max-width: 768px) {
-    footer #nondisclaimer .copy {
-        padding: 3.5em 0em 3.5em 0em;
-        text-align: center;
-        float: none;
-        font-size: 0.9em;
-      }
-      footer #nondisclaimer .social {
-        padding: 2.5em 0;
-        margin: 0;
-        text-align: center;
-        float: none;
-      }
-}
-
-@media (max-width: 992px) {
-    .logo img {
-        position: relative;
-        bottom: 8px;
-    }
-    .main-menu {
-        width: 200px;
-        background-color:rgb(255, 255, 255);
-        /* position: absolute; */
-        right: 1.7em;
-    }
-    .main-menu ul {
-      margin-top: 0px;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .main-menu ul li {
-      list-style-type: none;
-      float: left;
-      padding-left: 25px;
-      border-left: 1px solid rgba(202, 204, 202, 0.6);
-      line-height: 50px;
-      text-transform: uppercase;
-      font-size: 14px;
-    }
-    main {
-      padding: 3em 1em 3em 1em;
-      margin: 0;
-    }
-    #home .main-col-content {
-      padding: 25px;
-      min-height: 450px;
-      margin-top: 1em;
-    }
-    .main-header {
-      width: 100%;
-    }
-
-    .navbar-brand {
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-}
-</style>    
+    </style>     
   </head>
   <body id="home">
     <div id="container">
     <header>
-      <!-- <div class="main-header">
-        <div class="logo">
-            <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
-        </div>
-        <nav class="main-menu">
-            <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="cliffs.html">Cliffs</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-      </div> -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light main-header">
         <a class="navbar-brand logo" href="#">
             <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
@@ -303,7 +58,11 @@ footer #nondisclaimer .social .fa-instagram {
       </nav>
 
     </header>
-
+    <!-- adding time of day code -->
+    <section id="timeofday">
+      <span>Your Current Local Time : </span>
+      <span id="clock"></span>
+    </section>
     <main>
       <h1 class="center-align">Introducing California's Greatest Cliffs</h1>
       <div class="row">
@@ -365,33 +124,10 @@ footer #nondisclaimer .social .fa-instagram {
           <div class="partner">
             <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group" class="partner-img">
           </div>
-      </div>
-              <!-- Repeat for other partner images -->
-          </div>
+        </div>
+        </div>
       </div>
   </section>
-    <!-- <section>
-      <ul id="partners" class="">
-        <li class="partner ">
-             <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours" class="partner-img">
-         </li>
-         <li class="partner ">
-             <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental" class="partner-img">
-         </li>
-         <li class="partner ">
-             <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure" class="partner-img">
-         </li>
-         <li class="partner ">
-             <img src="images/partners/partner-collegetours.png" alt="Partner College Tours" class="partner-img">
-         </li>
-         <li class="partner ">
-             <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals" class="partner-img">
-         </li>
-         <li class="partner ">
-             <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group" class="partner-img">
-         </li>
-     </ul>
-    </section> -->
 
     <footer>
       <!-- Nondisclaimer -->
@@ -424,5 +160,7 @@ footer #nondisclaimer .social .fa-instagram {
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+     <!-- Digital Clock -->
+     <script src="js/digclock.js"></script>
   </body>
 </html>
